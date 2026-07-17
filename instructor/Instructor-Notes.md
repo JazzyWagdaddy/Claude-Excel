@@ -1,6 +1,6 @@
 # Instructor Notes
 
-Audience assumption: business users comfortable with Excel basics, mixed AI experience, many coming from Copilot. Total runtime ~95 min hands-on + 15–20 min discussion.
+Audience assumption: business users comfortable with Excel basics, mixed AI experience. Total runtime ~95 min hands-on + 15–20 min discussion.
 
 ## Before Class
 

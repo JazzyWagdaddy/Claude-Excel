@@ -21,7 +21,8 @@ The Transactions sheet has Units, Unit Price, and Discount — but no revenue co
 1. Open the Claude sidebar in Excel.
 2. Prompt:
 ```
-   Add a "Net Revenue" column to the Transactions sheet that calculates Units × Unit Price × (1 − Discount). Format it as currency.
+   Add a "Net Revenue" column to the Transactions sheet that calculates Units × Unit Price × (1 − Discount).
+   Format it as currency.
 ```
 
 3. **Observe:** Claude highlights the cells it filled and adds a comment explaining the formula.
@@ -35,7 +36,8 @@ Profit requires unit costs — which live on the **Product Costs** sheet.
 
 1. Prompt:
 ```
-   Add a "Unit Cost" column to Transactions that looks up each product's cost from the Product Costs sheet. Then add a "Gross Profit" column: (Unit Price × (1 − Discount) − Unit Cost) × Units.
+   Add a "Unit Cost" column to Transactions that looks up each product's cost from the Product Costs sheet.
+   Then add a "Gross Profit" column: (Unit Price × (1 − Discount) − Unit Cost) × Units.
 ```
 
 2. **Observe:** Ask Claude *"Explain the lookup formula you just wrote."* Its explanation includes clickable citations — click one and watch Excel jump to the referenced cell.
@@ -45,12 +47,15 @@ Profit requires unit costs — which live on the **Product Costs** sheet.
 
 1. Prompt:
 ```
-   Add a "Deal Size" column that labels each order: "Large" if Net Revenue is $1,000 or more, "Medium" if $250–$999, otherwise "Small."
+   Add a "Deal Size" column that labels each order: "Large" if Net Revenue is $1,000 or more,
+   "Medium" if $250–$999, otherwise "Small."
 ```
 
 2. Then push further:
-
-   > Now add a "Commission" column: reps earn 3% of Net Revenue, but 5% on Large deals in the Field channel.
+```
+   Now add a "Commission" column: reps earn 3% of Net Revenue,
+   but 5% on Large deals in the Field channel.
+```
 
 3. **Audit it:** Ask Claude — *"Walk me through the Commission formula for row 10, citing the cells you used."*
 

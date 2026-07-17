@@ -20,8 +20,9 @@ The Transactions sheet has Units, Unit Price, and Discount — but no revenue co
 
 1. Open the Claude sidebar in Excel.
 2. Prompt:
-
-   > Add a "Net Revenue" column to the Transactions sheet that calculates Units × Unit Price × (1 − Discount). Format it as currency.
+```
+   Add a "Net Revenue" column to the Transactions sheet that calculates Units × Unit Price × (1 − Discount). Format it as currency.
+```
 
 3. **Observe:** Claude highlights the cells it filled and adds a comment explaining the formula.
 4. Click into any cell in the new column and read the formula in the formula bar. Can you map each piece back to your request?
@@ -33,8 +34,9 @@ The Transactions sheet has Units, Unit Price, and Discount — but no revenue co
 Profit requires unit costs — which live on the **Product Costs** sheet.
 
 1. Prompt:
-
-   > Add a "Unit Cost" column to Transactions that looks up each product's cost from the Product Costs sheet. Then add a "Gross Profit" column: (Unit Price × (1 − Discount) − Unit Cost) × Units.
+```
+   Add a "Unit Cost" column to Transactions that looks up each product's cost from the Product Costs sheet. Then add a "Gross Profit" column: (Unit Price × (1 − Discount) − Unit Cost) × Units.
+```
 
 2. **Observe:** Ask Claude *"Explain the lookup formula you just wrote."* Its explanation includes clickable citations — click one and watch Excel jump to the referenced cell.
 3. Discussion: which lookup approach did Claude choose (XLOOKUP, INDEX/MATCH, VLOOKUP)? Ask it *why* it chose that one.
@@ -42,8 +44,9 @@ Profit requires unit costs — which live on the **Product Costs** sheet.
 ## Exercise 1.3 — Conditional Logic Without the Syntax Pain (7 min)
 
 1. Prompt:
-
-   > Add a "Deal Size" column that labels each order: "Large" if Net Revenue is $1,000 or more, "Medium" if $250–$999, otherwise "Small."
+```
+   Add a "Deal Size" column that labels each order: "Large" if Net Revenue is $1,000 or more, "Medium" if $250–$999, otherwise "Small."
+```
 
 2. Then push further:
 
@@ -62,8 +65,9 @@ Profit requires unit costs — which live on the **Product Costs** sheet.
    ```
 
 2. Prompt:
-
-   > There's an error in the formula I just typed. Find it, explain what's wrong, and fix it so it totals Units for the Northeast region.
+```
+   There's an error in the formula I just typed. Find it, explain what's wrong, and fix it so it totals Units for the Northeast region.
+```
 
 3. **Observe:** Claude identifies the unquoted criterion, explains the failure, and corrects it — this is the everyday "why is my formula broken?" workflow.
 
